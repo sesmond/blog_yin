@@ -29,11 +29,14 @@
           <p>{{ site.author-bio }}</p>
       </div>
       <nav>
-        <h6>Follow me on</h6>
+        <h6>联系我</h6>
         <ul>
           {% if site.twitter %}
           <li><a target="_blank" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
           {% endif %}
+          {% if site.weibo %}
+          <li><a target="_blank" href="https://weibo.com/{{ site.weibo }}">weibo</a></li>
+          {% endif %}          
           {% if site.github %}
           <li><a target="_blank" href="https://github.com/{{ site.github }}">Github</a></li>
           {% endif %}
