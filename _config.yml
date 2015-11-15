@@ -1,6 +1,5 @@
-name: "yin"
-
-author:"sesmond"
-
+--- 
+author: sesmond
+baseurl: /yinxiaohan
+name: yin
 url: "https://sesmond.github.io"
-baseurl:  "/yinxiaohan"
