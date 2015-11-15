@@ -7,8 +7,8 @@ description: "Yin xiaohan Bolg"
 # Your name. Will show in your footer + sidebar
 author: "Sesmond"
 
-#url: "http://sesmond.github.io"
-baseurl: "/"
+url: "https://sesmond.github.io"
+baseurl: "/yinxiaohan"
 encoding: UTF-8
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
