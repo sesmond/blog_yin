@@ -1,0 +1,138 @@
+---
+layout: post
+title: 创建服务请求
+---
+
+
+<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00DO000000536oo">
+<input type=hidden name="retURL" value="http://yinxiaohan.top/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：这些字段是可选的调试元素。如果希望在调试模式下进行测试，请取消这些行的留言。                               -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="minxu-c@deloitte.com.cn">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">联系人姓名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">电子邮件</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">电话</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">主题</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">描述</label><textarea name="description"></textarea><br>
+
+<label for="company">公司</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="type">类型</label><select  id="type" name="type"><option value="">--无--</option><option value="投诉">投诉</option>
+<option value="咨询">咨询</option>
+<option value="其他">其他</option>
+</select><br>
+
+<label for="status">状态</label><select  id="status" name="status"><option value="">--无--</option><option value="新建">新建</option>
+<option value="处理中">处理中</option>
+<option value="待审核">待审核</option>
+<option value="审核通过">审核通过</option>
+<option value="已结案">已结案</option>
+<option value="已关闭">已关闭</option>
+</select><br>
+
+<label for="reason">个案原因</label><select  id="reason" name="reason"><option value="">--无--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
+<option value="Complex functionality">Complex functionality</option>
+<option value="Existing problem">Existing problem</option>
+<option value="Instructions not clear">Instructions not clear</option>
+<option value="New problem">New problem</option>
+</select><br>
+
+<label for="priority">优先级</label><select  id="priority" name="priority"><option value="">--无--</option><option value="一般">一般</option>
+<option value="重大">重大</option>
+<option value="严重">严重</option>
+<option value="特别重大">特别重大</option>
+</select><br>
+
+首次联系时间:<span class="dateInput"><input  id="00NO00000021wUT" name="00NO00000021wUT" size="20" type="text" /></span><br>
+
+下发时间:<span class="dateInput"><input  id="00NO00000021wUd" name="00NO00000021wUd" size="20" type="text" /></span><br>
+
+受理单位首次回复时间:<span class="dateInput"><input  id="00NO00000021wUi" name="00NO00000021wUi" size="20" type="text" /></span><br>
+
+受理单位上次回复时间:<span class="dateInput"><input  id="00NO00000021wV2" name="00NO00000021wV2" size="20" type="text" /></span><br>
+
+客户满意度:<input  id="00NO00000021wVH" maxlength="255" name="00NO00000021wVH" size="20" type="text" /><br>
+
+请求内容:<textarea  id="00NO00000021wVv" name="00NO00000021wVv" rows="3" type="text" wrap="soft"></textarea><br>
+
+无需回访:<input  id="00NO00000021wX8" name="00NO00000021wX8" type="checkbox" value="1" /><br>
+
+是否纳入考核:<input  id="00NO00000021wXI" name="00NO00000021wXI" type="checkbox" value="1" /><br>
+
+是否失效:<input  id="00NO00000021wXS" name="00NO00000021wXS" type="checkbox" value="1" /><br>
+
+客诉处理得分:<input  id="00NO00000022kWp" name="00NO00000022kWp" size="20" type="text" /><br>
+
+不纳入考核原因:<textarea  id="00NO00000022kYV" name="00NO00000022kYV" type="text" wrap="soft"></textarea><br>
+
+二次投诉:<input  id="00NO00000022kYf" name="00NO00000022kYf" type="checkbox" value="1" /><br>
+
+结案策略:<select  id="00NO00000022kf7" name="00NO00000022kf7" title="结案策略"><option value="">--无--</option><option value="正常结案">正常结案</option>
+<option value="多次联系客户未果">多次联系客户未果</option>
+<option value="客户要求不合理">客户要求不合理</option>
+</select><br>
+
+备注车系:<select  id="00NO00000022kfW" name="00NO00000022kfW" title="备注车系"><option value="">--无--</option><option value="DX7">DX7</option>
+</select><br>
+
+*说明内容:<textarea  id="00NO00000022khS" name="00NO00000022khS" type="text" wrap="soft"></textarea><br>
+
+客诉类型:<select  id="00NO00000022lZP" name="00NO00000022lZP" title="客诉类型"><option value="">--无--</option><option value="大客户">大客户</option>
+<option value="DX7投诉">DX7投诉</option>
+<option value="媒体曝光">媒体曝光</option>
+</select><br>
+
+紧急程度:<select  id="00NO00000022law" name="00NO00000022law" title="紧急程度"><option value="">--无--</option><option value="一般">一般</option>
+<option value="紧急">紧急</option>
+<option value="非常紧急">非常紧急</option>
+</select><br>
+
+重要程度:<select  id="00NO00000022lb6" name="00NO00000022lb6" title="重要程度"><option value="">--无--</option><option value="一般">一般</option>
+<option value="重要">重要</option>
+<option value="非常重要">非常重要</option>
+</select><br>
+
+服务工单号:<input  id="00NO00000022lba" maxlength="255" name="00NO00000022lba" size="20" type="text" /><br>
+
+开单时间:<span class="dateInput"><input  id="00NO00000022lcO" name="00NO00000022lcO" size="20" type="text" /></span><br>
+
+送修人电话:<input  id="00NO00000022lg6" maxlength="40" name="00NO00000022lg6" size="20" type="text" /><br>
+
+送修人手机:<input  id="00NO00000022lgV" maxlength="40" name="00NO00000022lgV" size="20" type="text" /><br>
+
+工单类别:<input  id="00NO00000022lhd" maxlength="200" name="00NO00000022lhd" size="20" type="text" /><br>
+
+服务专员:<input  id="00NO00000022lhn" maxlength="100" name="00NO00000022lhn" size="20" type="text" /><br>
+
+责任技师:<input  id="00NO00000022li7" maxlength="100" name="00NO00000022li7" size="20" type="text" /><br>
+
+送修人:<input  id="00NO00000022liH" maxlength="100" name="00NO00000022liH" size="20" type="text" /><br>
+
+客户请求时间:<span class="dateInput"><input  id="00NO00000022o3q" name="00NO00000022o3q" size="20" type="text" /></span><br>
+
+来电号码:<input  id="00NO00000022oBL" maxlength="40" name="00NO00000022oBL" size="20" type="text" /><br>
+
+期望联系人:<input  id="00NO00000022oBQ" maxlength="30" name="00NO00000022oBQ" size="20" type="text" /><br>
+
+期望联系电话:<input  id="00NO00000022oBa" maxlength="40" name="00NO00000022oBa" size="20" type="text" /><br>
+
+期望联系Email:<input  id="00NO00000022oBp" maxlength="80" name="00NO00000022oBp" size="20" type="text" /><br>
+
+服代指导意见:<textarea  id="00NO00000022oX7" name="00NO00000022oX7" type="text" wrap="soft"></textarea><br>
+
+被投诉员工:<input  id="00NO00000022vW6" maxlength="255" name="00NO00000022vW6" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+
+</form>
