@@ -20,36 +20,10 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="off-canvas">
-      <figure class="avatar">
-        <img src="{{ site.baseurl }}assets/img/naruto.jpg" alt="Picture" title="That's me, {{ site.author }}.">
-      </figure>
-      <div class="bio">
-          <h1>{{ site.author }}</h1>
-          <p>{{ site.author-bio }}</p>
-      </div>
-      <nav>
-        <h6>联系我</h6>
-        <ul>
-          {% if site.weibo %}
-          <li><a target="_blank" href="https://weibo.com/{{ site.weibo }}">Weibo</a></li>
-          {% endif %}   
-          {% if site.weixin %}
-          <li>微信：yinguniang24</li>
-          {% endif %}            
-        </ul>
-      </nav>
-    </div>
+
 
 
     <div class="site-wrapper">
-
-      <header>
-        <div class="h-wrap">
-          <h1 class="title"><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
-          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
-        </div>
-      </header>
 
       <main>
         {{ content }}
@@ -60,8 +34,7 @@
       </footer>
 
     </div>
-    {% comment %} site-wrapper {% endcomment %}
-
+  
     <script src="{{ site.baseurl }}js/main.js"></script>
     {% comment %} Google Analytics {% endcomment %}
     {% if site.ga_tracking_id and site.ga_domain %}
