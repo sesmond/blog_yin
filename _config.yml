@@ -13,10 +13,10 @@ baseurl: "/"
 encoding: UTF-8
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
-#author-bio: 仗剑走天涯,诗酒趁年华
+author-bio: 仗剑走天涯,诗酒趁年华
 
 #short name comment
-#duo_short_name : "yinxiaohan"
+duo_short_name : "yinxiaohan"
 # Social Accounts (mine, as placeholders)
 
 #weibo: x2012feng
