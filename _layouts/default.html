@@ -1,4 +1,3 @@
-
 <!--  ----------------------------------------------------------------------  -->
 <!--  注意：请将以下 <META> 元素添加到您的网页 <HEAD> 中。如有必要，请修改 charset 参数以指定 HTML 页的字符集。    -->
 <!--  ----------------------------------------------------------------------  -->
@@ -9,10 +8,10 @@
 <!--  注意：请将以下 <FORM> 元素添加到您的网页中。                                              -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<input type=hidden name="orgid" value="00DO000000536oo">
-<input type=hidden name="retURL" value="http://taste.com">
+<input type=hidden name="oid" value="00DO000000536oo">
+<input type=hidden name="retURL" value="http://yinxiaohan.top/">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  注意：这些字段是可选的调试元素。如果希望在调试模式下进行测试，请取消这些行的留言。                               -->
@@ -21,32 +20,77 @@
 <!--  value="minxu-c@deloitte.com.cn">                                        -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">联系人姓名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<label for="first_name">名</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">姓</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
 <label for="email">电子邮件</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="phone">电话</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+<label for="company">公司</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
-<label for="subject">主题</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+<label for="city">城市</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
 
-<label for="description">描述</label><textarea name="description"></textarea><br>
-
-<label for="status">状态</label><select  id="status" name="status"><option value="">--无--</option><option value="新建">新建</option>
-<option value="处理中">处理中</option>
-<option value="待审核">待审核</option>
-<option value="审核通过">审核通过</option>
-<option value="已结案">已结案</option>
-<option value="已关闭">已关闭</option>
+<label for="country_code">国家/地区</label><select  id="country_code" name="country_code"><option value="">--无--</option><option value="CN">CN</option>
 </select><br>
 
-<label for="reason">个案原因</label><select  id="reason" name="reason"><option value="">--无--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
-<option value="Complex functionality">Complex functionality</option>
-<option value="Existing problem">Existing problem</option>
-<option value="Instructions not clear">Instructions not clear</option>
-<option value="New problem">New problem</option>
+<label for="state_code">州/省</label><select  id="state_code" name="state_code"><option value="">--无--</option><option value="34">34</option>
+<option value="11">11</option>
+<option value="50">50</option>
+<option value="35">35</option>
+<option value="62">62</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="52">52</option>
+<option value="46">46</option>
+<option value="13">13</option>
+<option value="23">23</option>
+<option value="41">41</option>
+<option value="91">91</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="32">32</option>
+<option value="36">36</option>
+<option value="22">22</option>
+<option value="21">21</option>
+<option value="92">92</option>
+<option value="15">15</option>
+<option value="64">64</option>
+<option value="63">63</option>
+<option value="61">61</option>
+<option value="37">37</option>
+<option value="31">31</option>
+<option value="14">14</option>
+<option value="51">51</option>
+<option value="71">71</option>
+<option value="12">12</option>
+<option value="65">65</option>
+<option value="54">54</option>
+<option value="53">53</option>
+<option value="33">33</option>
 </select><br>
 
-请求内容:<textarea  id="00NO00000021wVv" name="00NO00000021wVv" rows="3" type="text" wrap="soft"></textarea><br>
+<label for="lead_source">潜在客户来源</label><select  id="lead_source" name="lead_source"><option value="">--无--</option><option value="官网">官网</option>
+<option value="来电">来电</option>
+<option value="微信">微信</option>
+<option value="线上营销">线上营销</option>
+<option value="厂端重购">厂端重购</option>
+<option value="集采平台">集采平台</option>
+<option value="自然到店">自然到店</option>
+</select><br>
+
+<label for="salutation">称谓</label><select  id="salutation" name="salutation"><option value="">--无--</option><option value="先生">先生</option>
+<option value="女士">女士</option>
+</select><br>
+
+<label for="URL">网址</label><input  id="URL" maxlength="80" name="URL" size="20" type="text" /><br>
+
+线索级别:<select  id="00NO00000022l8E" name="00NO00000022l8E" title="线索级别"><option value="">--无--</option><option value="H">H</option>
+<option value="A">A</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="D">D</option>
+<option value="E">E</option>
+</select><br>
 
 <input type="submit" name="submit">
 
