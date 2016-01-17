@@ -1,0 +1,52 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：请将以下 <META> 元素添加到您的网页 <HEAD> 中。如有必要，请修改 charset 参数以指定 HTML 页的字符集。    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：请将以下 <FORM> 元素添加到您的网页中。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00DO000000536oo">
+<input type=hidden name="retURL" value="http://taste.com">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：这些字段是可选的调试元素。如果希望在调试模式下进行测试，请取消这些行的留言。                               -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="minxu-c@deloitte.com.cn">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">联系人姓名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">电子邮件</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">电话</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">主题</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">描述</label><textarea name="description"></textarea><br>
+
+<label for="status">状态</label><select  id="status" name="status"><option value="">--无--</option><option value="新建">新建</option>
+<option value="处理中">处理中</option>
+<option value="待审核">待审核</option>
+<option value="审核通过">审核通过</option>
+<option value="已结案">已结案</option>
+<option value="已关闭">已关闭</option>
+</select><br>
+
+<label for="reason">个案原因</label><select  id="reason" name="reason"><option value="">--无--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
+<option value="Complex functionality">Complex functionality</option>
+<option value="Existing problem">Existing problem</option>
+<option value="Instructions not clear">Instructions not clear</option>
+<option value="New problem">New problem</option>
+</select><br>
+
+请求内容:<textarea  id="00NO00000021wVv" name="00NO00000021wVv" rows="3" type="text" wrap="soft"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
