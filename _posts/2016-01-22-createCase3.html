@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "创建服务请求-移动APP"
+date:   2016-01-22 16:57:51
+---
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：请将以下 <FORM> 元素添加到您的网页中。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00DO000000536oo">
+<input type=hidden name="retURL" value="http://yinxiaohan.top">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：这些字段是可选的调试元素。如果希望在调试模式下进行测试，请取消这些行的留言。                               -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="minxu-c@deloitte.com.cn">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">联系人姓名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">电子邮件</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">电话</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">主题</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">描述</label><textarea name="description"></textarea><br>
+
+<label for="company">公司</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="type">类型</label><select  id="type" name="type"><option value="">--无--</option><option value="投诉">投诉</option>
+<option value="咨询">咨询</option>
+<option value="其他">其他</option>
+</select><br>
+
+<label for="status" style="display:none;">状态</label><select  id="status" name="status" style="display:none;"><option value="">--无--</option><option value="新建">新建</option>
+<option value="处理中">处理中</option>
+<option value="待审核">待审核</option>
+<option value="审核通过">审核通过</option>
+<option value="已结案">已结案</option>
+<option value="已关闭">已关闭</option>
+</select><br>
+
+请求内容:<textarea  id="00NO00000021wVv" name="00NO00000021wVv" rows="3" type="text" wrap="soft"></textarea><br>
+
+不纳入考核原因:<textarea  id="00NO00000022kYV" name="00NO00000022kYV" type="text" wrap="soft"></textarea><br>
+
+备注车系:<select  id="00NO00000022kfW" name="00NO00000022kfW" title="备注车系"><option value="">--无--</option><option value="DX7">DX7</option>
+</select><br>
+
+客诉类型:<select  id="00NO00000022lZP" name="00NO00000022lZP" title="客诉类型"><option value="">--无--</option><option value="大客户">大客户</option>
+<option value="DX7投诉">DX7投诉</option>
+<option value="媒体曝光">媒体曝光</option>
+</select><br>
+
+来电号码:<input  id="00NO00000022oBL" maxlength="40" name="00NO00000022oBL" size="20" type="text" /><br>
+
+被投诉员工:<input  id="00NO00000022vW6" maxlength="255" name="00NO00000022vW6" size="20" type="text" /><br>
+
+*集成来源:<select  id="00NO000000236qH" name="00NO000000236qH" title="*集成来源" style="display:none;">
+<option value="" >--无--</option>
+<option value="官网" >官网</option>
+<option value="移动APP" selected = "selected">移动APP</option>
+<option value="微信" >微信</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
