@@ -4,10 +4,11 @@ title: 上传文件
 ---
 
 <script type="text/javascript">
+
+
 function openUpload(){
-    alert(document.getElementById('fileLink').value);
     window.opener.postMessage(document.getElementById('fileLink').value, '*');
-    alert('传之后');
+    window.close();
 }
 
 </script>
@@ -15,6 +16,7 @@ function openUpload(){
 <form>
 
     文件链接 <input type="text" id="fileLink" name="文件链接" /> <br/>
+
             <button type="button" onclick="openUpload()" >上传文件 </button>
 </form>
 
