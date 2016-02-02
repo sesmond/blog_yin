@@ -5,8 +5,13 @@ title: 上传文件
 
 <script type="text/javascript">
 
+
+
+
+
 function openUpload(){
-    alert(document.domain);
+    top.postMessage(document.getElementById('fileLink').value, '*');
+/*    alert(document.domain);
 
     document.domain = "c.cs5.visual.force.com";
     alert('回传前');
@@ -14,7 +19,7 @@ function openUpload(){
     //alert(document.getElementById('filetext').value);
     alert('step');
    window.opener.document.getElementById('fileLink').value=document.getElementById('filetext').value;
-   alert('回传后');
+   alert('回传后');*/
 
 }
 
@@ -23,6 +28,8 @@ function openUpload(){
 
 <form>
 
-    文件链接 <input type="text" id="filetext" name="文件链接" /> <br/>
+    文件链接 <input type="text" id="fileLink" name="文件链接" /> <br/>
             <button type="button" onclick="openUpload()" >上传文件 </button>
 </form>
+
+
