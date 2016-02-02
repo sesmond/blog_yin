@@ -4,24 +4,11 @@ title: 上传文件
 ---
 
 <script type="text/javascript">
-
-
 function openUpload(){
     alert(document.getElementById('fileLink').value);
     window.opener.postMessage(document.getElementById('fileLink').value, '*');
     alert('传之后');
-/*    alert(document.domain);
-
-    document.domain = "c.cs5.visual.force.com";
-    alert('回传前');
-    window.opener.document.getElementById('fileLink').value='helloworld';
-    //alert(document.getElementById('filetext').value);
-    alert('step');
-   window.opener.document.getElementById('fileLink').value=document.getElementById('filetext').value;
-   alert('回传后');*/
-
 }
-
 
 </script>
 
