@@ -8,7 +8,8 @@ title: 上传文件
 
 function openUpload(){
     alert(document.getElementById('fileLink').value);
-    window.oepner.postMessage(document.getElementById('fileLink').value, '*');
+    window.opener.postMessage(document.getElementById('fileLink').value, '*');
+    alert();
 /*    alert(document.domain);
 
     document.domain = "c.cs5.visual.force.com";
