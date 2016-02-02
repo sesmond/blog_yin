@@ -1,0 +1,25 @@
+---
+layout: post
+title: 上传文件
+---
+
+<script type="text/javascript">
+
+function openUpload(){
+    alert('回传前');
+    window.opener.document.getElementById('fileLink').value='helloworld';
+    //alert(document.getElementById('filetext').value);
+    alert('step');
+   window.opener.document.getElementById('fileLink').value=document.getElementById('filetext').value;
+   alert('回传后');
+
+}
+
+
+</script>
+
+<form>
+
+    文件链接 <input type="text" id="fileLink" name="文件链接" /> <br/>
+            <button type="button" onclick="openUpload()" >数据回传 </button>
+</form>
