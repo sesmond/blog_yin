@@ -6,11 +6,9 @@ title: 上传文件
 <script type="text/javascript">
 
 
-
-
-
 function openUpload(){
-    top.postMessage(document.getElementById('fileLink').value, '*');
+    alert(document.getElementById('fileLink').value);
+    window.oepner.postMessage(document.getElementById('fileLink').value, '*');
 /*    alert(document.domain);
 
     document.domain = "c.cs5.visual.force.com";
