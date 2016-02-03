@@ -7,7 +7,8 @@ title: 上传文件
 
 
 function openUpload(){
-    window.opener.postMessage(document.getElementById('fileLink').value, '*');
+	var result = {fileLink:document.getElementById('fileLink').value};
+    window.opener.postMessage(result, '*');
     window.close();
 }
 
