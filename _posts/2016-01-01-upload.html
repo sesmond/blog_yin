@@ -8,11 +8,12 @@ title: 上传文件
 
 function openUpload(){
 	//var result = {fileLink:document.getElementById('fileLink').value};
-	var result = document.getElementById("fileLink").value;
+	//var result = document.getElementById("fileLink").value;
+	var result = 'name=abc;size=123;apr=908';
 	alert(result);
-    //window.opener.postMessage(result, '*');
-    alert('123');
-    top.document.getElementById("pg:myform:theBlock:uploadSec:fileLink").value  = '345';
+    window.opener.postMessage(result, '*');
+    //alert('123');
+    //top.document.getElementById("pg:myform:theBlock:uploadSec:fileLink").value  = '345';
     alert('234');
     window.close();
 }
