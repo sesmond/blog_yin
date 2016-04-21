@@ -5,26 +5,18 @@ title: 上传文件
 
 <script type="text/javascript">
     alert(window.location.search);
-    var myurl = GetArgs(window.location.search,"redirect");
-    alert("参数为"+myurl);
+    var myurl = GetQueryString("redirect");
+    alert("URL参数为"+myurl);
 
-function GetArgs(params,paramName){
-    args = params.split("&");
-    var valArg = "";
-    for(var i =0;i<args.length;i++){
-        str = args[i];
-        var arg = str.split("=");
-     
-        if(arg.length<=1) 
-            continue;
-        if(arg[0] == paramName){
-            valArg = arg[1];
-            break;
-        }
-    }
-    return valArg;
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)
+     	return  unescape(r[2]); 
+     return null;
 }
- 
 
 function openUpload(){
 	window.name = '测试文件.txt;1024;18764';
