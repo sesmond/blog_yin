@@ -4,7 +4,27 @@ title: 上传文件
 ---
 
 <script type="text/javascript">
+    alert(window.location.search);
+    var myurl = GetArgs(window.location.search,"redirect");
+    alert("参数为"+myurl);
 
+function GetArgs(params,paramName){
+    args = params.split("&");
+    var valArg = "";
+    for(var i =0;i<args.length;i++){
+        str = args[i];
+        var arg = str.split("=");
+     
+        if(arg.length<=1) 
+            continue;
+        if(arg[0] == paramName){
+            valArg = arg[1];
+            break;
+        }
+    }
+    return valArg;
+}
+ 
 
 function openUpload(){
 	window.name = '测试文件.txt;1024;18764';
@@ -19,7 +39,7 @@ function openUpload(){
     //alert('234');
 //    window.close();
 //window.location.href = 'https://c.cs5.visual.force.com/apex/CaseAttachmentProxy';
-self.location.href = 'c.cs5.visual.force.com/apex/CaseAttachmentProxy';
+	self.location.href = myurl;
 //alert('跳转后');
 }
 
