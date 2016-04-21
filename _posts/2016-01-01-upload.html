@@ -7,8 +7,13 @@ title: 上传文件
 
 
 function openUpload(){
+	//var result = {fileLink:document.getElementById('fileLink').value};
 	var result = {fileLink:document.getElementById('fileLink').value};
-    window.opener.postMessage(result, '*');
+	alert(result);
+    //window.opener.postMessage(result, '*');
+    alert('123');
+    window.opener.document.getElementById('pg:myform:theBlock:uploadSec:fileSize').value  = result;
+    alert('234');
     window.close();
 }
 
