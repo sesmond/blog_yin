@@ -21,19 +21,19 @@ function openUpload(){
             <button type="button" onclick="openUpload()" >上传文件 </button>
 
 </form>
-<iframe id="frameC" style="height:1px;width:1px;display:none;"></iframe> 
+
 
 
 <script type="text/javascript"> 
 	var iframeTag = document.getElementById('frameC'), 
-	iframeSrc = 'https://c.cs5.visual.force.com/apex/CaseAttachmentProxy', 
-	pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight; 
+	//iframeSrc = 'https://c.cs5.visual.force.com/apex/CaseAttachmentProxy', 
+	//pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight; 
 
-	iframeTag.src = iframeSrc + pageHeight; 
-	iframeTag.style.display = 'block'; 
+	//iframeTag.src = iframeSrc + pageHeight; 
+	//iframeTag.style.display = 'block'; 
 
 window.setTimeout(function(){ 
-alert('主页面设置我（IframeB）的src，通过Hash（#）给我传递它收到的高度：' + location.hash); 
+//alert('主页面设置我（IframeB）的src，通过Hash（#）给我传递它收到的高度：' + location.hash); 
 },2000); 
 }; 
 </script> 
