@@ -1,0 +1,53 @@
+---
+layout: post
+title: UAT-创建线索
+---
+
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：请将以下 <FORM> 元素添加到您的网页中。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00Dp00000008ay5">
+<input type=hidden name="retURL" value="http://yinxiaohan.top">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意：这些字段是可选的调试元素。如果希望在调试模式下进行测试，请取消这些行的留言。                               -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="minxu-c=deloitte.com.cn@example.com">                            -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="last_name">姓</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="mobile">手机</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+
+WebToLead_省:<input  id="00N2800000BM02y" maxlength="100" name="00N2800000BM02y" size="20" type="text" /><br>
+
+WebToLead_市:<input  id="00N2800000BM02w" maxlength="100" name="00N2800000BM02w" size="20" type="text" /><br>
+
+WebToLead_区县:<input  id="00N2800000BM02x" maxlength="100" name="00N2800000BM02x" size="20" type="text" /><br>
+
+WebToLead_意向经销商:<input  id="00N2800000BM01P" maxlength="100" name="00N2800000BM01P" size="20" type="text" /><br>
+
+意向品牌:<select  id="00N2800000BM01N" name="00N2800000BM01N" title="意向品牌"><option value="">--无--</option><option value="东南">东南</option>
+<option value="三菱">三菱</option>
+</select><br>
+
+意向车型:<input  id="00N2800000BM01R" maxlength="100" name="00N2800000BM01R" size="20" type="text" /><br>
+
+意向购车时间:<select  id="00N2800000BM01O" name="00N2800000BM01O" title="意向购车时间"><option value="">--无--</option><option value="1周内">1周内</option>
+<option value="1周-1月">1周-1月</option>
+<option value="1-3月">1-3月</option>
+<option value="3-6月">3-6月</option>
+<option value="6-12月">6-12月</option>
+<option value="12个月以上">12个月以上</option>
+</select><br>
+
+地址:<textarea  id="00N2800000BM013" name="00N2800000BM013" type="text" wrap="soft"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
