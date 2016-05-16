@@ -1,0 +1,6 @@
+---
+layout: space
+title: 在线客服聊天
+---
+<iframe src="https://uat-soueast-motor.cs31.force.com/ClientChat/apex/LiveAgentLogin" id="kIframe" name="kIframe" scroling="yes"  width="50%" height="40%" frameborder="0" style="position: absolute;left: 0px;"> </iframe>
+<iframe src="http://uat-soueast-motor.cs31.force.com/SearchKnowledgeInPC" id="kIframe2" name="kIframe2" scroling="yes"  width="50%" height="40%" frameborder="0" style="position: absolute;right: 0px;"> </iframe>
